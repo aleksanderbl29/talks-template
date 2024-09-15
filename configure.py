@@ -74,7 +74,7 @@ def fix_readme(config):
 
     readme = f"""# {config['title']}
 
-This talk repository is based on the [talk template](https://github.com/poldrack/talks-template).  
+This talk repository is based on the [talk template](https://github.com/aleksanderbl29/talks-template).
 
 The latest version of the talk is available at {config['talk_url']}
 
@@ -88,23 +88,23 @@ def fix_site(config, backup=True):
     with open("site/index.qmd", "r") as f:
         index = f.read()
     index = index.replace(
-        "Talks about the template project", 
+        "Talks about the template project",
         f"Talks about {config['title']}")
-    
+
     if backup:
         os.rename("site/index.qmd", "site/index.qmd.bak")
 
     with open("site/index.qmd", "w") as f:
         f.write(index)
-    
+
     with open('site/_quarto.yml', 'r') as f:
         quarto = f.read()
-    
+
     quarto = quarto.replace(
-        "Template talk", 
+        "Template talk",
         config['title'])
     quarto = quarto.replace(
-        "https://github.com/poldrack/talks-template",
+        "https://github.com/aleksanderbl29/talks-template",
         config['repo_url'])
 
     with open("site/_quarto.yml", "w") as f:
@@ -114,10 +114,10 @@ def fix_talk(config, backup=True):
     with open("talk/talk.qmd", "r") as f:
         talk = f.read()
     talk = talk.replace(
-        "Talk template", 
+        "Talk template",
         config['title'])
     talk = talk.replace(
-        "https://poldrack.github.io/talks-template/",
+        "https://aleksanderbl29.github.io/talks-template/",
         config['repo_url'])
 
     if backup:

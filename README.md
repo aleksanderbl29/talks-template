@@ -1,21 +1,21 @@
 # talks-template
 
-This is a talk template for Markdown-based presentations using Quarto.  
+This is a talk template for Markdown-based presentations using Quarto.
 
-NOTE:  If you are not Russ Poldrack then you should first fork this repo and modify the files to replace my name and information with your own!
+NOTE:  If you are not Aleksander Bang-Larsen then you should first fork this repo and modify the files to replace my name and information with your own!
 
 ### Single Talk in its Own Repo (STOR) Template
 
-This repository is built around the "Single talk in its Own Repo" (STOR) model.  Many researchers will give the same talk repeatedly over time, making changes with each presentation.  The STOR model maintains a single repository for that talk, with the main branch representing the current version of the talk.  
+This repository is built around the "Single talk in its Own Repo" (STOR) model.  Many researchers will give the same talk repeatedly over time, making changes with each presentation.  The STOR model maintains a single repository for that talk, with the main branch representing the current version of the talk. Forked from Russ Poldracks efforts.
 
 # Using the template
 
-To create a new talk, simply use this repository as a template when you generate a new repository for the new talk. 
+To create a new talk, simply use this repository as a template when you generate a new repository for the new talk.
 
 After creating the new repository, you will first need to make the following changes:
 
 - You will need to enable Github Pages in order for the content to appear on the web.  To do this, go to `Settings -> Pages` in the new repository, and select "Deploy from a Branch" from the Source menu, select "Main" as the branch and "docs" as the folder, then click "Save".
-- set the version tag within the config.toml file. The scheme for the tag is `TalkName_Venue_Month_Day_Year`.  This tag is used to name the PDF file, which is stored in `docs/pdfs` and is meant as the archival version of the talk.  The current talk is rendered in `docs/talk/talk.html` and is not stored for archival purposes (i.e. it is overwritten on each push). 
+- set the version tag within the config.toml file. The scheme for the tag is `TalkName_Venue_Month_Day_Year`.  This tag is used to name the PDF file, which is stored in `docs/pdfs` and is meant as the archival version of the talk.  The current talk is rendered in `docs/talk/talk.html` and is not stored for archival purposes (i.e. it is overwritten on each push).
 - run `python configure.py` to finish the configuration.  *This only needs to be done once.*
 - Create your talk within `talk/talk.qmd`.
 - Render and push the talk and associated site using `make all`

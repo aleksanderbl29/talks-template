@@ -1,15 +1,15 @@
 ---
-title: "Talk template" 
-author: Russ Poldrack
-institute: Stanford University
+title: "Talk template"
+author: Aleksander Bang-Larsen
+institute: Aarhus Universitet
 title-slide-attributes:
-    data-background-image: ./images/stanford_background.jpg
-    data-background-opacity: "0.5"
+    data-background-image: ./images/chris-barbalis-mNOyQxq90gA-unsplash.jpg
+    data-background-opacity: "0.25"
 format:
-  revealjs: 
-    footer: "https://poldrack.github.io/talks-template/"
+  revealjs:
+    footer: "https://aleksanderbl29.github.io/talks-template/"
     slide-number: true
-    chalkboard: 
+    chalkboard:
       buttons: false
     preview-links: auto
     theme: [default, rp-theme.scss]
