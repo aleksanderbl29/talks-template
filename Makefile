@@ -6,7 +6,7 @@ all: render-talk push-talk render-site push-site
 render-talk:
 	-git rm -rf docs/*
 	cd talk && quarto render talk.qmd
-	python setup_redirect.py
+	python3 setup_redirect.py
 	git add docs/talk/index.html
 	-git add talk/talk.qmd
 
